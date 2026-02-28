@@ -1,3 +1,4 @@
+//array dan pointer - operasi dasar
 #include <iostream>
 using namespace std;
 void balikArray(int *ptr, int n) {

@@ -1,3 +1,4 @@
+//kompleksitas waktu analisis algoritma
 #include <iostream>
 using namespace std;
 int cariMinimum(int data[], int jumlah, int &posisi) {

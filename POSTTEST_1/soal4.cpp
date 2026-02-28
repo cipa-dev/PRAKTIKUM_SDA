@@ -1,3 +1,4 @@
+//pointer pada fungsi 
 #include <iostream>
 using namespace std;
 void tukarNilai(int *a, int *b) {
