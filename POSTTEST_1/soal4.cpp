@@ -7,14 +7,14 @@ void tukarNilai(int *a, int *b) {
 }
 int main() {
     int x, y;
-    cout << "Masukkan nilai x: ";
+    cout << "masukkan nilai x: ";
     cin >> x;
-    cout << "Masukkan nilai y: ";
+    cout << "masukkan nilai y: ";
     cin >> y;
-    cout << "\nSebelum ditukar" << endl;
+    cout << "\nsebelum ditukar" << endl;
     cout << "x = " << x << ", y = " << y << endl;
     tukarNilai(&x, &y);
-    cout << "\nSesudah ditukar" << endl;
+    cout << "\nsesudah ditukar" << endl;
     cout << "x = " << x << ", y = " << y << endl;
     return 0;
 }

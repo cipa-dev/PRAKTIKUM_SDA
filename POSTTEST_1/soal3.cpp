@@ -18,7 +18,7 @@ int main() {
         cout << bilangan[i] << " | alamat: " << (bilangan + i) << endl;
     }
     balikArray(bilangan, 7);
-    cout << "\nArray sesudah dibalik:" << endl;
+    cout << "\narray sesudah dibalik:" << endl;
     for (int i = 0; i < 7; i++) {
         cout << bilangan[i] << " | alamat: " << (bilangan + i) << endl;
     }
