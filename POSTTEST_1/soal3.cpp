@@ -1,27 +1,29 @@
 //array dan pointer - operasi dasar
 #include <iostream>
 using namespace std;
-void balikArray(int *ptr, int n) {
-    int *awal = ptr;
-    int *akhir = ptr + n - 1;
+int main() {
+    int data[7] = {2, 3, 5, 7, 11, 13, 17};
+    int *awal, *akhir, temp;
+    cout << "--- array sebelum dibalik ---" << endl;
+    for (int i = 0; i < 7; i++) {
+        cout << "index ke-" << i
+            << " | nilai: " << data[i]
+            << " | alamat: " << &data[i] << endl;
+    }
+    awal = data;
+    akhir = data + 6;
     while (awal < akhir) {
-        int temp = *awal;
+        temp = *awal;
         *awal = *akhir;
         *akhir = temp;
         awal++;
         akhir--;
     }
-}
-int main() {
-    int bilangan[7] = {2, 3, 5, 7, 11, 13, 17};
-    cout << "array sebelum dibalik:" << endl;
+    cout << "\n--- array sesudah dibalik ---" << endl;
     for (int i = 0; i < 7; i++) {
-        cout << bilangan[i] << " | alamat: " << (bilangan + i) << endl;
-    }
-    balikArray(bilangan, 7);
-    cout << "\narray sesudah dibalik:" << endl;
-    for (int i = 0; i < 7; i++) {
-        cout << bilangan[i] << " | alamat: " << (bilangan + i) << endl;
+        cout << "index ke-" << i
+            << " | nilai: " << data[i]
+            << " | alamat: " << &data[i] << endl;
     }
     return 0;
 }
